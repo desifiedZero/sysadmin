@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;800&display=swap');
+
+html, body {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.float-box {
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.thiccc {
+    font-weight: 800;
+}
+
+.thicc {
+    font-weight: 600;
+}
+
+.thin {
+    font-weight: 300;
+}
+
+.sticky-top {
+    top: 0.5em;
+}
+
+.toggler-cont {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.toggler-cont > label:first-of-type {
+    border-radius: 5px 0 0 5px;
+    border-right: rgba(0, 0, 0, 0.2) 1px solid;
+    overflow: hidden;
+}
+.toggler-cont > label:last-of-type {
+    border-radius: 0 5px 5px 0;
+    border-left: rgba(0, 0, 0, 0.2) 1px solid;
+    overflow: hidden;
+}
+
+.toggler {
+    display: none;
+}
+
+.toggler[type='radio'] + label {
+    padding: 5px 10px;
+    background-color: rgb(190, 190, 190);
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.toggler + label:hover {
+    cursor: pointer;
+}
+
+.toggler[type='radio'].approve:checked + label {
+    background-color: rgb(0, 95, 0);
+    color: white;
+}
+.toggler[type='radio'].pending:checked + label {
+    background-color: rgb(65, 65, 65);
+    color: white;
+}
+.toggler[type='radio'].reject:checked + label {
+    background-color: rgb(158, 0, 0);
+    color: white;
+}
+
+.hovered:hover > div{
+    background: rgba(0, 136, 34, 0.1);
+}
+
+.hovered > div {
+    border-bottom: rgba(0, 0, 0, 0.2) 1px solid;
+    color: #111
+}
